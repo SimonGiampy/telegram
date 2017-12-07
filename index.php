@@ -13,3 +13,6 @@ echo $text;
 //http://jsonviewer.stack.hu/
 //https://github.com/php-telegram-bot/core#getupdates-installation
 //https://www.youtube.com/watch?v=hJBYojK7DO4
+
+
+//https://api.telegram.org/bot487626617:AAFKwEN6EikkZlNveOi7Rb1qdiReOYDQOqg/setWebhook?url=https://boiling-shore-60433.herokuapp.com/
