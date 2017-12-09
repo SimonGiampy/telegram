@@ -148,7 +148,8 @@ function processMessage($message)
 }
 
 
-define('WEBHOOK_URL', 'https://simongiampy-t.herokuapp.com/');
+//define('WEBHOOK_URL', 'https://simongiampybot.herokuapp.com/');
+define('WEBHOOK_URL', 'https://simongiampy.github.io/telegram/hellobot.php');
 
 if (php_sapi_name() == 'cli') {
     // if run from console, set or delete webhook
