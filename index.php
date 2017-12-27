@@ -1,6 +1,6 @@
 <?php
-
-$mytoken = "487626617:AAFKwEN6EikkZlNveOi7Rb1qdiReOYDQOqg";
+//this is the bot deployed to heroku, it is a demo of hellobot
+$mytoken = "512047421:AAEaQK0cgMy8T3beSBEXY7wD6OEhIEaE7yc";
 //$request = "https://api.telegram.org/bot<token>/METHOD_NAME";
 
 //telegram code
@@ -135,15 +135,15 @@ function processMessage($message)
         'keyboard' => array(array('Hello', 'Hi')),
         'one_time_keyboard' => true,
         'resize_keyboard' => true)));
-        } elseif ($text === "Hello" || $text === "Hi") {
-            apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => 'Nice to meet you'));
+        } elseif ($text === "Ciao" || $text === "Diocane") {
+            apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => 'Dio è porco'));
         } elseif (strpos($text, "/stop") === 0) {
             // stop now
         } else {
-            apiRequestWebhook("sendMessage", array('chat_id' => $chat_id, "reply_to_message_id" => $message_id, "text" => 'Cool'));
+            apiRequestWebhook("sendMessage", array('chat_id' => $chat_id, "reply_to_message_id" => $message_id, "text" => 'Cazzo vuoi ah lesbicaaaa'));
         }
     } else {
-        apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => 'I understand only text messages'));
+        apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => 'Non capisco un cazzo'));
     }
 }
 
